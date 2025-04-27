@@ -17,7 +17,7 @@ You can download it and place it appropriately if you want to retrain or test th
 - **3 Convolutional Layers (CNN)**
 - **2 Fully Connected (Dense) Layers**
 - Final output layer for **binary classification** (Mask / No Mask)
-- The training was made using transforms that randomly flip the image and randomly rotate them b 40 degrees, but such is not represented in the codes submitted. We only provide the transform2 which only resizes and normalizes the images. We nhave provided the transform 2 in the 
+- The training was made using transforms that randomly flip the image and randomly rotate them b 40 degrees, but such is not represented in the codes submitted. We only provide the transform2 which only resizes and normalizes the images. We have provided the transform1 used in training in the py file named dataset4training.py. 
 
 ## Image Processing
 
