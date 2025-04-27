@@ -34,4 +34,11 @@ Project/
 ├── interface.py    # Standardized imports for consistency
 ├── test.py         # Script to test the model on new data
 ├── checkpoints/    # Folder containing trained model weights
-└── data/           # Dataset folder (partial or full)
+└── data/           # Dataset folder, partial since it only contains roughly 60 images accross with mask and without mask.
+```
+##project Output
+```plaintext
+
+Evaluating the model based on the final_weights on the "data" images, we got that the accuracy was 98.5% (Test Accuracy: 98.51%). Note that this evaluation was performed using teh asgn2_praneet_kumar_patra code in the repository.
+```
+
