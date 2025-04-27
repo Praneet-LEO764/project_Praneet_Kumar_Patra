@@ -18,13 +18,10 @@ unicorn-classifier/
 
 ## Key Features
 
-- **Data augmentation**: Random flips, rotations, and color jittering to improve model generalization
-- **Model architecture**: Custom CNN with batch normalization and dropout for better performance
-- **Training**: Comprehensive training loop with validation and early stopping
-- **Checkpointing**: Automatic saving of model checkpoints to resume training
+- **Data augmentation**: Random flips , rotations upto 40 degrees, a bit of gaussian blurr
+- **Model architecture**: Custom CNN with batch normalization , 3 cnn layers and 2 dense neural networks
 - **Evaluation**: Detailed metrics including accuracy, precision, recall, and F1 score
 - **Prediction**: Easy-to-use functions for making predictions on new images
-- **Visualization**: Tools to visualize model predictions
 
 ## Installation
 
@@ -52,11 +49,11 @@ python interface.py --mode train --data_dir /path/to/data --output_dir results
 The data directory should have the following structure:
 ```
 data/
-├── unicorn/          # Class 0 - Unicorn images
+├── with_mask/          
 │   ├── img1.jpg
 │   ├── img2.jpg
 │   └── ...
-└── not_unicorn/      # Class 1 - Non-unicorn images
+└── without_mask/      
     ├── img1.jpg
     ├── img2.jpg
     └── ...
