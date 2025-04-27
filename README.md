@@ -1,2 +1,37 @@
-The data folder in the repository is not the entire dataset on which the training was performed. The entire dataset with over 7.5K images can be found in the link provided- https://www.kaggle.com/datasets/omkargurav/face-mask-dataset.
-The model uses 3 CNN layers and 2 dense neural layers, eventually getting to a binary classification. The images plugged in get converted to 224*224 images.
+# Face Mask Detection Project
+
+This repository contains code for a face mask detection model using Convolutional Neural Networks (CNNs).
+
+## Dataset
+
+⚠️ **Note:**  
+The `data/` folder included in this repository is **not** the complete dataset used during model training.  
+The full dataset with over **7,500 images** can be found here:
+
+> [Face Mask Dataset on Kaggle](https://www.kaggle.com/datasets/omkargurav/face-mask-dataset)
+
+You can download it and place it appropriately if you want to retrain or test the model more extensively.
+
+## Model Architecture
+
+- **3 Convolutional Layers (CNN)**
+- **2 Fully Connected (Dense) Layers**
+- Final output layer for **binary classification** (Mask / No Mask)
+
+## Image Processing
+
+- All input images are resized to **224 × 224 pixels** before being fed into the model.
+
+## Project Structure
+
+```plaintext
+Project/
+├── model.py        # Defines the CNN architecture
+├── train.py        # Handles training loop
+├── predict.py      # Inference and prediction code
+├── dataset.py      # Custom dataset and dataloader definitions
+├── config.py       # Configuration settings (batch size, epochs, etc.)
+├── interface.py    # Standardized imports for consistency
+├── test.py         # Script to test the model on new data
+├── checkpoints/    # Folder containing trained model weights
+└── data/           # Dataset folder (partial or full)
