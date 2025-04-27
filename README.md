@@ -1,4 +1,4 @@
-# Unicorn Image Classifier
+# Face Mask Detection Image Classifier
 
 This project implements a deep learning-based binary image classifier using PyTorch, designed to identify unicorn images. The classifier uses a convolutional neural network (CNN) architecture and includes training, evaluation, and prediction functionality.
 
