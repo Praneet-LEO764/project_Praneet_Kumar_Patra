@@ -3,6 +3,7 @@ import torch.nn as nn
 import torch.optim as optim
 
 def my_descriptively_named_train_function(model, train_loader, device, num_epochs):
+    model.to(device)
     model.train()
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
