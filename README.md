@@ -46,7 +46,7 @@ unicorn-classifier/
 To train the model:
 
 ```
-python main.py --mode train --data_dir /path/to/data --output_dir results
+python interface.py --mode train --data_dir /path/to/data --output_dir results
 ```
 
 The data directory should have the following structure:
@@ -67,7 +67,7 @@ data/
 To make predictions on new images:
 
 ```
-python main.py --mode predict --data_dir /path/to/data --checkpoint results/checkpoints/best_model.pth --predict_dir /path/to/test_images --output_dir results
+python interface.py --mode predict --data_dir /path/to/data --checkpoint results/checkpoints/best_model.pth --predict_dir /path/to/test_images --output_dir results
 ```
 
 ## Customization
